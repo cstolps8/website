@@ -19,6 +19,14 @@ var job = [
         percent: "55%",
     },
     {
+        name: "AWS",
+        percent:"30%"
+    },
+    {
+        name: "Azure DevOps",
+        percent:"10%"
+    },
+    {
         name: "Javascript",
         percent: "65%",
     },
@@ -34,6 +42,7 @@ var job = [
         name: "Mac",
         percent: "65%",
     }
+
 ]
 $(function index() {
 
@@ -42,8 +51,8 @@ $(function index() {
         $("#myKnowledge").append(`
         <p>${element.name}</p>
         <div class="progress">
-            <div class="progress-value" style="--progBar:${element.percent}"></div> 
-        </div><p>${element.percent}</p>
+            <div class="progress-value" style="--progBar:${element.percent}"></div> <p class="loaingPercent">${element.percent}</p>
+        </div>
         `)
     });
 

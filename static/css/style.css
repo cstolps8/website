@@ -8,14 +8,25 @@ body {
     /* try #212121 also for dark mode */
     --background-color: #212121;
     --font: sans-serif;
-   
+
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
+
     /* display: fluid; */
     /* justify-content: center; */
     /* align-items: center; */
+}
+
+.notTopContainer {
+    margin-top: 50px;
+}
+
+.attributesContainer {
+    min-height: 60vh;
+    margin-top: 50px;
+
 }
 
 
@@ -250,7 +261,12 @@ svg {
     color: gray;
     border-radius: 8px;
     max-width: 400px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+
+.card:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
 
 /* Information about the timeline */
 .info {
@@ -323,15 +339,64 @@ svg {
 
 }
 
-.progress-value {
-    
-    animation: load 3s normal forwards;
-    box-shadow: 0 10px 40px -10px rgb(0, 0, 0);
-    border-radius: 100px;
-    background: rgb(0, 0, 0);
-    height: 8px;
-    width: 0;
+@media(max-width:990px) {
+
+    .progress {
+        background: rgba(0, 0, 0, 0.1);
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        padding: 0 5px;
+        display: flex;
+        height: 12px;
+        width: auto;
+        margin-bottom: 20px;
+
+    }
 }
+
+@media(max-width:990px) {
+    .progress-value {
+
+        animation: load 3s normal forwards;
+        box-shadow: 0 10px 40px -10px rgb(0, 0, 0);
+        border-radius: 100px;
+        background: rgb(0, 0, 0);
+        height: 8px;
+        width: 0;
+    }
+}
+
+@media(min-width:990px) {
+
+    .progress {
+        background: rgba(0, 0, 0, 0.1);
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        padding: 0 5px;
+        display: flex;
+        height: 12px;
+        width: auto;
+        margin-bottom: 20px;
+
+    }
+}
+
+@media(min-width:990px) {
+    .progress-value {
+
+        animation: load 3s normal forwards;
+        box-shadow: 0 10px 40px -10px rgb(0, 0, 0);
+        border-radius: 100px;
+        background: rgb(0, 0, 0);
+        height: 8px;
+        width: 0;
+    }
+}
+
 
 
 @keyframes load {
@@ -344,4 +409,30 @@ svg {
     }
 }
 
+.loaingPercent {
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    margin-left: 8px;
+}
 
+/* portfolio cards */
+
+.card-title {
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.card-link {
+    color: white;
+}
+
+.card-read-more {
+    border-top: 1px solid #D4D4D4;
+}
+
+.card-read-more a {
+    text-decoration: none !important;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase
+}

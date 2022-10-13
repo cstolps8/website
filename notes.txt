@@ -2,3 +2,7 @@ abilities page https://epicbootstrap.com/snippets/features-clean
 css timelines https://alvarotrigo.com/blog/html-css-timelines/
 progress bars circular https://alvarotrigo.com/blog/progress-bar-css/
     https://codepen.io/artboardartisan/pen/VLzKVN
+
+Snapping contaienrs 
+    https://isotropic.co/css-scroll-snap-tutorial/
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts
