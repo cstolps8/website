@@ -6,3 +6,13 @@ progress bars circular https://alvarotrigo.com/blog/progress-bar-css/
 Snapping contaienrs 
     https://isotropic.co/css-scroll-snap-tutorial/
     https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts
+
+    used- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts
+
+nav bar
+    https://mdbootstrap.com/how-to/bootstrap/navbar-transparent/
+
+
+
+Cool ideas
+    https://demos.creative-tim.com/now-ui-kit-pro/presentation.html

@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    
 }
 
 :root {
@@ -8,6 +9,30 @@ body {
     /* try #212121 also for dark mode */
     --background-color: #212121;
     --font: sans-serif;
+
+}
+
+/* Sections */
+
+.scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding: 40px;
+    scroll-behavior: smooth;
+}
+
+.scroller section {
+    scroll-snap-align: start;
+    padding-top: 80px;
+
+}
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
 
 }
 
@@ -276,13 +301,13 @@ svg {
 }
 
 /* Title of the card */
-.title {
+.card-title {
     color: rgb(255, 255, 255);
     position: relative;
 }
 
 /* Timeline dot  */
-.title::before {
+.card-title::before {
     content: "";
     position: absolute;
     width: 18px;
@@ -416,23 +441,82 @@ svg {
 }
 
 /* portfolio cards */
+.article-card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    color: gray;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
-.card-title {
+.article-card:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+.article-card-title {
     color: rgb(255, 255, 255);
     position: relative;
 }
 
-.card-link {
+.article-card-link {
     color: white;
 }
 
-.card-read-more {
+.article-card-read-more {
     border-top: 1px solid #D4D4D4;
 }
 
-.card-read-more a {
+.article-card-read-more a {
     text-decoration: none !important;
     padding: 10px;
     font-weight: 600;
     text-transform: uppercase
+}
+
+/* contact me  */
+
+.contact{
+    padding: 4%;
+    height: 400px;
+   
+}
+.contact .row{
+margin-top: 15%;
+}
+.col-md-3{
+    background: #000000;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+    color: white;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
 }

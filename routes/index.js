@@ -1,16 +1,12 @@
 const express = require('express');
 
-// const speakersRoute = require('./speakers');
-// const feedbackRoute = require('./feedback');
-// const fbResultRoute = require('./fbResult');
-// const loginRoute = require('./login');
+ const contactMeRoute = require('./contactMe');
 
-//const contactMe = require('./contactMe')
 
 const router = express.Router();
 
 module.exports = params => {
-  const { speakersService } = params;
+  const { contactMe } = params;
 
   router.get('/', async (request, response, next) => {
    // return response.render('index')
@@ -28,15 +24,7 @@ module.exports = params => {
     }
   });
 
-//   router.use('/speakers', speakersRoute(params));
-//   router.use('/feedback', feedbackRoute(params));
-//   router.use('/fbResult', fbResultRoute(params));
-//   router.use('/login', loginRoute(params));
-
-
-   //router.use('/contactMe', loginRoute(params));
-
-
+   router.use('/contactMe', contactMeRoute(params));
 
   return router;
 };
