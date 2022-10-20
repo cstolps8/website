@@ -3,35 +3,28 @@ const path = require('path');
 const cookieSession = require('cookie-session');
 const createError = require('http-errors');
 const session = require('express-session')
-
 const bodyParser = require('body-parser');
 
-// const FeedbackService = require('./services/FeedbackService');
-// const SpeakersService = require('./services/SpeakerService');
-// const FBResultService = require('./services/FBResultService')
-// const LoginService = require('./services/LoginService')
 
-// const feedbackService = new FeedbackService('./data/feedback.json');
-// const speakersService = new SpeakersService('./data/speakers.json');
-// const fbResultService = new FBResultService('./data/feedback.json');
-// const loginService = new LoginService('./data/login.json');
+const ContactMeService = require('./services/ContactMeService')
+const contactMeService = new ContactMeService('./data/contactMe.json')
 
 const routes = require('./routes');
 
 const app = express();
 
-app.locals.siteName = 'Collin Academy';
+app.locals.siteName = 'Collin Stolpa';
 
 const port = 80;
 
 app.set('trust proxy', 1);
 
-// app.use(
-//   cookieSession({
-//     name: 'session',
-//     keys: ['Ghdur687399s7w', 'hhjjdf89s866799'],
-//   })
-// );
+app.use(
+  cookieSession({
+    name: 'session',
+    keys: ['Ghdur687399s7w', 'hhjjdf89s866799'],
+  })
+);
 
 app.use(session({
   secret: 'Keep it secret',
@@ -64,11 +57,7 @@ app.use(async (request, response, next) => {
 app.use(
   '/',
   routes({
-
-    // feedbackService,
-    // speakersService,
-    // fbResultService,
-    // loginService,
+    contactMeService,
   })
 );
 

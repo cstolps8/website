@@ -5,24 +5,24 @@ const { check, validationResult } = require('express-validator');
 const router = express.Router();
 
 const validations = [
-  check('name')
+  check('fname')
     .trim()
     .isLength({ min: 3 })
     .escape()
-    .withMessage('A name is required'),
+    .withMessage('A first name is required'),
+  check('lname')
+    .trim()
+    .isLength({ min: 3 })
+    .escape()
+    .withMessage('A last name is required'),
   check('email')
     .trim()
     .isEmail()
-    .normalizeEmail()
     .withMessage('A valid email address is required'),
-  check('phoneNumber')
+  check('comment')
     .trim()
-    .isMobilePhone()
-    .withMessage('A phone number is required'),
-  check('dateOfParty')
-    .isDate()
-    .escape()
-    .withMessage('A date is required'),
+    .isLength({ min: 3 })
+    .withMessage("Please leave a Message"),
 
 ];
 
@@ -31,18 +31,18 @@ module.exports = params => {
 
   router.get('/', async (request, response, next) => {
     try {
-     // const contactMe = await contactMeService.getList();
+      const contactMe = await contactMeService.getList();
 
       const errors = request.session.contactMe ? request.session.contactMe.errors : false;
 
       const successMessage = request.session.contactMe ? request.session.contactMe.message : false;
 
-      request.session.feedback = {};
+      request.session.contactMe = {};
 
       return response.render('layout', {
         pageTitle: 'ContactMe',
         template: 'contactMe',
-      //  contactMe,
+        contactMe,
         errors,
         successMessage,
       });
@@ -62,10 +62,10 @@ module.exports = params => {
         return response.redirect('/contactMe');
       }
 
-      const { entry, name, email, phoneNumber, dateOfParty, receivePromos, receiveTexts } = request.body;
-      await contactMeService.addEntry(entry, name, email, phoneNumber, dateOfParty, receivePromos, receiveTexts);
+      const { fname, lname, email, comment } = request.body;
+      await contactMeService.addEntry(fname, lname, email, comment);
       request.session.contactMe = {
-        message: 'Thank you for your contactMe!',
+        message: 'Thank you for contacting me!',
       };
       return response.redirect('/contactMe');
     } catch (err) {
@@ -79,10 +79,10 @@ module.exports = params => {
       if (!errors.isEmpty()) {
         return response.json({ errors: errors.array() });
       }
-      const { entry, name, email, phoneNumber, dateOfParty, receivePromos, receiveTexts } = request.body;
-      await contactMeService.addEntry(entry, name, email, phoneNumber, dateOfParty, receivePromos, receiveTexts);
+      const { fname, lname, email, comment } = request.body;
+      await contactMeService.addEntry(fname, lname, email, comment);
       const contactMe = await contactMeService.getList();
-      return response.json({ contactMe, successMessage: 'Thank you for your Reaching out!' });
+      return response.json({ contactMe, successMessage: 'Thank you for Reaching out!' });
     } catch (err) {
       return next(err);
     }

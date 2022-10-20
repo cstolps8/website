@@ -1,6 +1,3 @@
-
-
-
 var job = [
     {
         name: "DevOps",
@@ -57,9 +54,5 @@ $(function index() {
     });
 
     function index() {
-
-
     }
-
-
 });

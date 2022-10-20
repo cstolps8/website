@@ -26,15 +26,14 @@ class ContactMeService {
 
   /**
    * Add a new feedback item
-   * @param {*} name The name of the user
-   * @param {*} title The title of the feedback message
-   * @param {*} message The feedback message
-   */
-  /**
-   * Add a new feedback item
-   * @param {*} name The name of the user
-    
+   **/
+  async addEntry(fname, lname, email, comment) {
+    console.log("adding entry")
+    const data = (await this.getData()) || [];
+    data.unshift({fname, lname, email, comment});
+    return writeFile(this.datafile, JSON.stringify(data));
   }
+
   /**
    * Fetches feedback data from the JSON file provided to the constructor
    */

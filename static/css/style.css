@@ -12,6 +12,11 @@ body {
 
 }
 
+/* Alert */
+.alert{
+    margin-top: 40px;
+}
+
 /* Sections */
 
 .scroller {

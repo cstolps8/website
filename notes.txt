@@ -1,6 +1,11 @@
-abilities page https://epicbootstrap.com/snippets/features-clean
-css timelines https://alvarotrigo.com/blog/html-css-timelines/
-progress bars circular https://alvarotrigo.com/blog/progress-bar-css/
+abilities page 
+    https://epicbootstrap.com/snippets/features-clean
+
+css timelines 
+    https://alvarotrigo.com/blog/html-css-timelines/
+
+progress bars circular 
+    https://alvarotrigo.com/blog/progress-bar-css/
     https://codepen.io/artboardartisan/pen/VLzKVN
 
 Snapping contaienrs 
@@ -12,7 +17,17 @@ Snapping contaienrs
 nav bar
     https://mdbootstrap.com/how-to/bootstrap/navbar-transparent/
 
-
-
 Cool ideas
     https://demos.creative-tim.com/now-ui-kit-pro/presentation.html
+
+Articles 
+    https://www.fisglobal.com/-/media/fisglobal/files/PDF/white-paper/The-Future-of-Fintech-Implications-of-5G-for-Financial-Services-White-Paper.pdf?sc_lang=en-GB
+    https://www.fisglobal.com/-/media/fisglobal/files/PDF/white-paper/Applied%20Quantum%20Optimization%20in%20Payment%20Fraud%20Detection%20White%20Paper
+
+How to add extra page
+    Add file to:
+        /routes 
+        /services 
+        /static/js ----> update views/layout/partials/scripts.js to include javascript 
+        /data 
+        /server.js ----> update routes
