@@ -1,6 +1,8 @@
 html,
 body {
     height: 100%;
+    overflow: hidden;
+
     
 }
 
@@ -20,38 +22,65 @@ body {
 /* Sections */
 
 .scroller {
-    height: 100vh;
+    height: 90vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-padding: 40px;
     scroll-behavior: smooth;
+    overflow: auto;
 }
+
+
 
 .scroller section {
     scroll-snap-align: start;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 
 }
 
-/* Navbar */
-.navbar{
-    position: sticky;
-    width: 100%;
-    background-color: #fff;
+#homeAboutMe{
+   min-height: 100%;
+
+   
+}
+
+#softwareKnowledge{
+ /* height: 90vh; */
+}
+
+#attributes{
+
+}
+
+#professionalHistory{
+
+}
+
+#howToArticles{
 
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 90vh;
 
     /* display: fluid; */
     /* justify-content: center; */
     /* align-items: center; */
 }
 
-.notTopContainer {
-    margin-top: 0px;
+
+/* Navbar */
+.navbar{
+    position: sticky;
+    width: 100%;
+    background-color: #fff;
+    height: 75px;
+
 }
+
+
+
+
 
 .attributesContainer {
     min-height: 60vh;
