@@ -35,7 +35,7 @@ body {
 
 /* Navbar */
 .navbar{
-    position: fixed;
+    position: sticky;
     width: 100%;
     background-color: #fff;
 
@@ -50,7 +50,7 @@ body {
 }
 
 .notTopContainer {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .attributesContainer {
@@ -524,4 +524,11 @@ margin-top: 15%;
 }
 .contact-form button:focus{
     box-shadow:none;
+}
+
+/* Articles */
+
+.article-container{
+    margin-top: 10%;
+    
 }

@@ -1,14 +1,1 @@
-[
-    {
-        "fname": "collin",
-        "lname": "stolpa",
-        "email": "collin.stolpa@gmail.com",
-        "comment": "Hello I would like to reach out about an opportunity regarding your cars extended warranty"
-    },
-    {
-        "fname": "collin",
-        "lname": "stolpa",
-        "email": "collin.stolpa@gmail.com",
-        "comment": "adsf"
-    }
-]
+[{"fname":"collin","lname":"stolpa","email":"collin.stolpa@gmail.com","comment":"asdf"},{"fname":"collin","lname":"stolpa","email":"collin.stolpa@gmail.com","comment":"Hello I would like to reach out about an opportunity regarding your cars extended warranty"},{"fname":"collin","lname":"stolpa","email":"collin.stolpa@gmail.com","comment":"adsf"}]

@@ -9,6 +9,8 @@ const bodyParser = require('body-parser');
 const ContactMeService = require('./services/ContactMeService')
 const contactMeService = new ContactMeService('./data/contactMe.json')
 
+const articlesRouter = require('./routes/articles')
+
 const routes = require('./routes');
 
 const app = express();
@@ -58,10 +60,10 @@ app.use(
   '/',
   routes({
     contactMeService,
+    articlesRouter,
+
   })
 );
-
-
 
 
 app.use((request, response, next) => {
