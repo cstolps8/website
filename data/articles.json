@@ -3,12 +3,57 @@
         "title": "The Future of FinTech: Implications of 5G for Financial Services",
         "date": "July 2021",
         "author": "Manmeet Singh, Mani Singh and Collin Stolpa, FIS",
-        "content": "THis is the article that i am writing"
+        "about": "THis is the article that i am writing",
+        "content":"This contains the content for the article."
     },
     {
         "title": "Applied Quantum Optimization in Payment Fraud Detection White Paper",
         "date": "March 2021",
         "author": "Manmeet Singh, Mani Singh and Collin Stolpa, FIS",
-        "content": "THis is the article that i am writing"
+        "about": "THis is the article that i am writing",
+        "content":"This contains the content for the article."
+    },
+    {
+        "title": "How to Train for a Marathon",
+        "date": "May 2021",
+        "author": "Collin Stolpa",
+        "about": "The training and preparation for running for a marathon",
+        "content":"This contains the content for the article."
+    },
+    {
+        "title": "How to use git",
+        "date": "March 2021",
+        "author": "Collin Stolpa",
+        "about": "How to use git and gitflow for DevOps CI/CD pipelines.",
+        "content":"This contains the content for the article."
+    },
+    {
+        "title": "Creating a Community of Practice (CoP)",
+        "date": "November 2022",
+        "author": "Collin Stolpa",
+        "about": "The SAFe implementation of a Community of practice and the things that work to keep the community engaged and participating,",
+        "content":"This contains the content for the article."
+    },
+    {
+        "title": "Creating the architecture of a CI/CD pipeline.",
+        "date": "December 2022",
+        "author": "Collin Stolpa",
+        "about": "The things to document and implement to get a CI/CD pipeline created at scale.",
+        "content":"This contains the content for the article."
+    },
+    {
+        "title": "How to make Chicken Alfredo",
+        "date": "March 2021",
+        "author": "Collin Stolpa",
+        "about": "The one true way to actually make chicken alfredo.",
+        "content":"This contains the content for the article."
+    },
+
+    {
+        "title": "How to spend your day watching Youtube while getting everything and nothing done at the same time.",
+        "date": "January 2023",
+        "author": "My stoned lazy ass",
+        "about": "The only reason I would write this would be to point out the fact that I love video games, cool science, math and technology videos and not getting things done in a timely manner.",
+        "content":"This contains the content for the article."
     }
 ]

@@ -5,32 +5,34 @@ const express = require('express');
 const router = express.Router();
 
 
+module.exports = params => {
+
+    router.get('/', async (request, response, next) => {
+
+        const { articleService } = params;
+
+        try {
+
+            const articles = await articleService.getData();
+            const errors = request.session.articles ? request.session.articles.errors : false;
+
+            const successMessage = request.session.articles ? request.session.articles.message : false;
+
+            request.session.articles = {};
+
+            return response.render('layout', {
+                pageTitle: 'Articles',
+                template: 'articles',
+                articles,
+                errors,
+                successMessage,
+            });
+        } catch (err) {
+            return next(err);
+        }
+    });
 
 
-router.get('/', async (request, response, next) => {
+    return router
 
-    try {
-
-        const errors = request.session.articles ? request.session.articles.errors : false;
-
-        const successMessage = request.session.articles ? request.session.articles.message : false;
-  
-        request.session.articles = {};
-  
-        return response.render('layout', {
-          pageTitle: 'Articles',
-          template: 'articles',
-         // articles,
-          errors,
-          successMessage,
-        });
-    } catch (err) {
-        return next(err);
-    }
-});
-
-
-
-
-
-module.exports = router
+}

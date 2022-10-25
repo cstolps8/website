@@ -9,7 +9,9 @@ const bodyParser = require('body-parser');
 const ContactMeService = require('./services/ContactMeService')
 const contactMeService = new ContactMeService('./data/contactMe.json')
 
-const articlesRouter = require('./routes/articles')
+
+const ArticleService  = require('./services/ArticlesService')
+const articleService = new ArticleService('./data/articles.json')
 
 const routes = require('./routes');
 
@@ -46,8 +48,10 @@ app.use(express.static(path.join(__dirname, './static')));
 
 app.use(async (request, response, next) => {
   try {
-    // const names = await speakersService.getNames();
-    // response.locals.speakerNames = names;
+    const articles = await articleService.getData();
+    console.log(`articles from ${articles} server`)
+
+    response.locals.articles = articles;
     return next();
   } catch (err) {
     return next(err);
@@ -60,7 +64,7 @@ app.use(
   '/',
   routes({
     contactMeService,
-    articlesRouter,
+    articleService,
 
   })
 );
