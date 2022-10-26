@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "The Future of FinTech: Implications of 5G for Financial Services",
         "date": "July 2021",
         "author": "Manmeet Singh, Mani Singh and Collin Stolpa, FIS",
@@ -7,6 +8,7 @@
         "content":"This contains the content for the article."
     },
     {
+        "id": 2,
         "title": "Applied Quantum Optimization in Payment Fraud Detection White Paper",
         "date": "March 2021",
         "author": "Manmeet Singh, Mani Singh and Collin Stolpa, FIS",
@@ -14,6 +16,7 @@
         "content":"This contains the content for the article."
     },
     {
+        "id": 3,
         "title": "How to Train for a Marathon",
         "date": "May 2021",
         "author": "Collin Stolpa",
@@ -21,6 +24,7 @@
         "content":"This contains the content for the article."
     },
     {
+        "id": 4,
         "title": "How to use git",
         "date": "March 2021",
         "author": "Collin Stolpa",
@@ -28,6 +32,7 @@
         "content":"This contains the content for the article."
     },
     {
+        "id": 5,
         "title": "Creating a Community of Practice (CoP)",
         "date": "November 2022",
         "author": "Collin Stolpa",
@@ -35,13 +40,15 @@
         "content":"This contains the content for the article."
     },
     {
-        "title": "Creating the architecture of a CI/CD pipeline.",
+        "id": 6,
+        "title": "Creating the architecture of a CI-CD pipeline.",
         "date": "December 2022",
         "author": "Collin Stolpa",
         "about": "The things to document and implement to get a CI/CD pipeline created at scale.",
         "content":"This contains the content for the article."
     },
     {
+        "id": 7,
         "title": "How to make Chicken Alfredo",
         "date": "March 2021",
         "author": "Collin Stolpa",
@@ -50,6 +57,7 @@
     },
 
     {
+        "id": 8,
         "title": "How to spend your day watching Youtube while getting everything and nothing done at the same time.",
         "date": "January 2023",
         "author": "My stoned lazy ass",

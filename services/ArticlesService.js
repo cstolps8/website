@@ -5,19 +5,19 @@ const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
 /**
- * Logic for reading and writing feedback data
+ * Logic for reading and writing data
  */
 class ArticleService {
   /**
    * Constructor
-   * @param {*} datafile Path to a JSOn file that contains the feedback data
+   * @param {*} datafile Path to a JSOn file that contains the data
    */
   constructor(datafile) {
     this.datafile = datafile;
   }
 
   /**
-   * Get all feedback items
+   * Get all items
    */
   async getList() {
     const data = await this.getData();
@@ -25,17 +25,39 @@ class ArticleService {
   }
 
   /**
-   * Add a new feedback item
+   * Add a new item
    **/
   async addEntry(fname, lname, email, comment) {
     console.log("adding entry")
     const data = (await this.getData()) || [];
-    data.unshift({fname, lname, email, comment});
+    data.unshift({ fname, lname, email, comment });
     return writeFile(this.datafile, JSON.stringify(data));
   }
 
   /**
-   * Fetches feedback data from the JSON file provided to the constructor
+   * 
+   * @param {string} title 
+   * 
+   * Get article by title
+   */
+  async getArticleByTitle(title) {
+    const data = (await this.getData()) || [];
+
+    // for some reason i cant return from the if statement so I have to define this first
+    let articles
+
+    data.forEach(article => {
+      if (article.title === title) {
+        articles = article;
+        return article; // never returns here
+      }
+    });
+
+    return articles
+  }
+
+  /**
+   * Fetches data from the JSON file provided to the constructor
    */
   async getData() {
     const data = await readFile(this.datafile, 'utf8');

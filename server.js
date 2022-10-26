@@ -49,8 +49,6 @@ app.use(express.static(path.join(__dirname, './static')));
 app.use(async (request, response, next) => {
   try {
     const articles = await articleService.getData();
-    console.log(`articles from ${articles} server`)
-
     response.locals.articles = articles;
     return next();
   } catch (err) {
