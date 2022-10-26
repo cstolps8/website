@@ -14,7 +14,7 @@ Don't forget to add at beginning of each 4 cards
                 <h4 class="article-card-title " name="title" id="articleTitle"><%= article.title %> </h4>
                 <h6 class="article-card-subtitle text-muted" id="articleDate"><%= article.date %> </h6>
                 <p class="article-card-text p-y-1" id="articleAuthor"><%= article.author %> </p>
-                <p class="article-card-text p-y-1" id="articleAbout"><%= article.about %> </p>
+                <p class="article-card-text p-y-1" id="articleAbout"><%- JSON.stringify(article.about).replace(/['"]+/g, '') %></p>
                 <div class="article-card-read-more">
                     <a href="/articles/<%= article.title %>?_method=GET" class="btn btn-link btn-block article-card-link">
                         Read More

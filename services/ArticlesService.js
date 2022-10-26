@@ -4,6 +4,8 @@ const util = require('util');
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
+
+
 /**
  * Logic for reading and writing data
  */
@@ -55,6 +57,15 @@ class ArticleService {
 
     return articles
   }
+
+  async md(filename){
+    // var path = "./static/articles/" + filename;
+    // var include = fs.readFileSync (path, 'utf8');
+    // var html = marked(include);
+
+    // return html;
+  } ;
+
 
   /**
    * Fetches data from the JSON file provided to the constructor
