@@ -43,9 +43,10 @@ module.exports = params => {
     });
     
     // should be using slug and storing the slug for better looking urls
-    router.get('/:title', async (request, response, next) => {
+    router.get('/:slug', async (request, response, next) => {
         try {
-            const articles = await articleService.getArticleByTitle(request.params.title);
+            const articles = await articleService.getArticleBySlug(request.params.slug);
+            console.log(articles)
             var renderedMarkdown = ''
             if (articles.content.type === "markdown"){
                  renderedMarkdown = await dompurify.sanitize( marked.parse(fs.readFileSync("./static/articles/"+articles.content.file, 'utf-8')))

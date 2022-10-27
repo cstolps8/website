@@ -16,7 +16,7 @@ Don't forget to add at beginning of each 4 cards
                 <p class="article-card-text p-y-1" id="articleAuthor"><%= article.author %> </p>
                 <p class="article-card-text p-y-1" id="articleAbout"><%- JSON.stringify(article.about).replace(/['"]+/g, '') %></p>
                 <div class="article-card-read-more">
-                    <a href="/articles/<%= article.title %>?_method=GET" class="btn btn-link btn-block article-card-link">
+                    <a href="/articles/<%= article.slug %>?_method=GET" class="btn btn-link btn-block article-card-link">
                         Read More
                     </a>
                 </div>

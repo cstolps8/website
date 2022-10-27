@@ -5,7 +5,6 @@
         "date": "July 2021",
         "author": "Manmeet Singh, Mani Singh and Collin Stolpa, FIS",
         "about": "How 5G could be implemented at FIS <a style=' color:blue;' href='https://www.fisglobal.com/-/media/fisglobal/files/PDF/white-paper/The-Future-of-Fintech-Implications-of-5G-for-Financial-Services-White-Paper.pdf?sc_lang=en-GB'>Link to original Article</a>",
-        "slug": "the-future-of-fintech-implications-of-5g-for-financial-services",
         "content": {
             "type": "pdf",
             "file": "The Future of Fintech Implications of 5G for Financial Services White Paper.pdf"
@@ -17,7 +16,6 @@
         "date": "March 2021",
         "author": "Manmeet Singh, Mani Singh and Collin Stolpa, FIS",
         "about": "An article about Quantum Optimization and how it could be implemented with Amazon Braket to detect Fraud in Payments. <a style=' color:blue;' href='https://www.fisglobal.com/-/media/fisglobal/files/PDF/white-paper/Applied%20Quantum%20Optimization%20in%20Payment%20Fraud%20Detection%20White%20Paper'>Link to original Article</a>",
-        "slug": "applied-quantum-optimization-in-payment-fraud-detection-white-paper",
         "content": {
             "type": "pdf",
             "file": "Applied Quantum Optimization in Payment Fraud Detection White Paper.pdf"
@@ -29,7 +27,6 @@
         "date": "October 2022",
         "author": "Collin Stolpa, FIS",
         "about": "A video about the success of Operation Joined Arrows and the massive implementation of CI CD into FIS",
-        "slug": "video-on-the-success-of-operation-joined-arrows",
         "content": {
             "type": "video",
             "file": "This will contain a video soon. The video is getting approval from higher management on releasing it to the public."
@@ -37,11 +34,10 @@
     },
     {
         "id": 3,
-        "title": "What it's like to Train for a Marathon",
+        "title": "How to Train for a Marathon",
         "date": "May 2021",
         "author": "Collin Stolpa",
-        "about": "The training, preparation, and experience of running a marathon.",
-        "slug": "how-to-train-for-a-marathon",
+        "about": "The training and preparation for running for a marathon",
         "content": {
             "type": "markdown",
             "file": "HowToTrainForAMarathon.md"
@@ -49,14 +45,13 @@
     },
     {
         "id": 4,
-        "title": "How to use Git",
+        "title": "How to use git",
         "date": "March 2021",
         "author": "Collin Stolpa",
         "about": "How to use git and gitflow for DevOps CI/CD pipelines.",
-        "slug": "how-to-use-git",
         "content": {
             "type": "markdown",
-            "file": "HowToUseGit.md"
+            "file": "This is just random text that is in markdown format... soon to be at least"
         }
     },
     {
@@ -65,10 +60,9 @@
         "date": "November 2022",
         "author": "Collin Stolpa",
         "about": "The SAFe implementation of a Community of practice and the things that work to keep the community engaged and participating,",
-        "slug": "creating-a-community-of-practice-cop",
         "content": {
             "type": "markdown",
-            "file": "CreatingACoP.md"
+            "file": "This is just random text that is in markdown format... soon to be at least"
         }
     },
     {
@@ -77,10 +71,9 @@
         "date": "December 2022",
         "author": "Collin Stolpa",
         "about": "The things to document and implement to get a CI/CD pipeline created at scale.",
-        "slug": "creating-the-architecture-of-a-ci-cd-pipeline",
         "content": {
             "type": "markdown",
-            "file": "CreatingCICDArch.md"
+            "file": "This is just random text that is in markdown format... soon to be at least"
         }
     },
     {
@@ -89,10 +82,9 @@
         "date": "March 2021",
         "author": "Collin Stolpa",
         "about": "The one true way to actually make chicken alfredo.",
-        "slug": "how-to-make-chicken-alfredo",
         "content": {
             "type": "markdown",
-            "file": "BestChickenAlfredo.md"
+            "file": "This is just random text that is in markdown format... soon to be at least"
         }
     },
     {
@@ -101,10 +93,10 @@
         "date": "January 2023",
         "author": "My stoned lazy ass",
         "about": "The only reason I would write this would be to point out the fact that I love video games, cool science, math and technology videos and not getting things done in a timely manner.",
-        "slug": "how-to-spend-your-day-watching-youtube-while-getting-everything-and-nothing-done-at-the-same-time",
         "content": {
             "type": "markdown",
             "file": "This is just random text that is in markdown format... soon to be at least"
         }
     }
+
 ]

@@ -58,13 +58,29 @@ class ArticleService {
     return articles
   }
 
-  async md(filename){
-    // var path = "./static/articles/" + filename;
-    // var include = fs.readFileSync (path, 'utf8');
-    // var html = marked(include);
+    /**
+   * 
+   * @param {string} slug 
+   * 
+   * Get article by slug entry in articles.json
+   */
+  async getArticleBySlug(slug){
 
-    // return html;
-  } ;
+    const data = (await this.getData()) || [];
+
+    // for some reason i cant return from the if statement so I have to define this first
+    let articles
+
+    data.forEach(article => {
+      if (article.slug === slug) {
+        articles = article;
+        return article; // never returns here
+      }
+    });
+
+    return articles
+  }
+
 
 
   /**
