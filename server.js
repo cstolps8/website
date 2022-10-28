@@ -13,6 +13,9 @@ const contactMeService = new ContactMeService('./data/contactMe.json')
 const ArticleService  = require('./services/ArticlesService')
 const articleService = new ArticleService('./data/articles.json')
 
+const WorkHistoryService = require('./services/WorkHistoryService')
+const workHistoryService = new WorkHistoryService('./data/workHistory.json')
+
 const routes = require('./routes');
 
 const app = express();
@@ -49,7 +52,10 @@ app.use(express.static(path.join(__dirname, './static')));
 app.use(async (request, response, next) => {
   try {
     const articles = await articleService.getData();
+    const workHistory = await workHistoryService.getData();
+
     response.locals.articles = articles;
+    response.locals.workHistory = workHistory;
     return next();
   } catch (err) {
     return next(err);
@@ -63,6 +69,7 @@ app.use(
   routes({
     contactMeService,
     articleService,
+    workHistoryService,
 
   })
 );
