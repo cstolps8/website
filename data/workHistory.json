@@ -1,0 +1,51 @@
+[
+    {
+        "id": "DevOps-Engineer-II-FIS",
+        "title": "DevOps Engineer II",
+        "date": "November 2022 - Present",
+        "company": "FIS",
+        "experience": [
+            "Working on Azure DevOps",
+            "Continued my role as a Facilitator for the DevOps Community of Practice"
+        ]
+    },
+    {
+        "id": "Software-Engineer-II-FIS",
+        "title": "Software Engineer II",
+        "date": "November 2021 - November 2022",
+        "company": "FIS",
+        "experience": [
+            "I am in a cross platform team that is implementing and developing DevOps practices across many of the Enterprises products, old and new.",
+            "Automating tool sets for development and operation teams with container based architecture. ",
+            "Implementation of gitflow and GitOps within the pipelines. ",
+            "I have helped with the design and architecture of the stages in a Jenkins Continuous Integration, Delivery, Deployment pipeline.",
+            "Practice of microservice architecture using Springboot applications.",
+            "I was on the team that started the DevOps CoP (Community of Practice), I am a presenter and a community moderator. I have a key role in finding presenters and facilitating the presentations."
+        ]
+    },
+    {
+        "id": "Software-Test-Analyst-Engineer-II-FIS",
+        "title": "Software Test Analyst",
+        "date": "February 2018 - November 2021",
+        "company": "FIS",
+        "experience": [
+            "Created automated regression testing framework for QA teams.",
+            "Testing framework was built upon Protractor using Cucumber as a testing tool.",
+            "Scripts would run in Jenkins via a git trigger.",
+            "Testing environment would run upon containerized clusters in Openshift",
+            "CI/CD pipeline script would dynamically create a Selenium Grid with parallel execution of tests on multiple types of browsers.",
+            "Results were then published to a test tracking tool via API request. "
+        ]
+    },
+    {
+        "id": "Building-Manager-Edgewater-Real-Estate",
+        "title": "Building Manager",
+        "date": "September 2019 - December 2020",
+        "company": "Edgewater Real Estate",
+        "experience": [
+            "Managing tenant requests",
+            "Selling apartments and keeping the building 95% rented.",
+            "Maintain basic upkeep of the building."
+        ]
+    }
+]

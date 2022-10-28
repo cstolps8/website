@@ -1,0 +1,15 @@
+
+
+<% workHistory.forEach(job => { %>
+    <a class="card" href="/workHistory/<%= job.id%>">
+                                        
+        <div class="info">
+            <h3 class="card-title"><%= job.company%></h3>
+            <i><%= job.date%></i>
+            <p><%= job.title%></p>
+            
+        </div>
+    </a>
+    
+    <% }) %>
+    
