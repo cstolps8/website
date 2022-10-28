@@ -1,0 +1,15 @@
+<div class="container article-container" >
+    <div class="" style="height: 100vh;">
+        <h1 class="display-4"><%= workHistory.title %></h1>
+        <p class="lead"><%= workHistory.date %></p>
+        <p class="lead"><%= workHistory.company %></p>
+        <hr class="my-4">
+        
+        <h3 class="display-6">Roles and Responsibilities:</h3>
+
+        <% workHistory.experience.forEach(job => { %>
+            <p><%= job %></p>
+            <% }) %>
+
+      </div>
+</div>
