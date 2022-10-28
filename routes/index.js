@@ -4,7 +4,7 @@ const express = require('express');
 // update routes here when a new one is needed
 const contactMeRoute = require('./contactMe');
 const articlesRoute = require('./articles');
-const workHistoryRoute = require('./workHistory');
+const workHistoryRoute = require('./workhistory');
 
 
 const router = express.Router();
@@ -31,7 +31,7 @@ module.exports = params => {
 
   router.use('/contactMe', contactMeRoute(params));
   router.use('/articles', articlesRoute(params));
-  router.use('/workHistory', workHistoryRoute(params));
+  router.use('/workhistory', workHistoryRoute(params));
 
 
   return router;
